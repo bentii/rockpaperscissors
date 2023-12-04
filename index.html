@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body style="background-color: #000000; color: #ffffff">
+    <div id="site">
+      <div id="topbar">
+        <div id="title"><h1>Welcome</h1></div>
+      </div>
+
+      <div id="score">
+        <h3>Scoreboard</h3>
+      </div>
+
+      <div id="game">
+        <h1>PC</h1>
+        <div id="gameturn">
+
+        </div>
+        <h1>You</h1>
+      </div>
+
+      <div id="footer">
+        <button
+          id="rock"
+          class="buttongame"
+          class="buttongame1"
+          onclick="rock()"
+        >
+          Rock
+        </button>
+        <button
+          id="paper"
+          class="buttongame"
+          class="buttongame1"
+          onclick="paper()"
+        >
+          Paper
+        </button>
+        <button
+          id="scissors"
+          class="buttongame"
+          class="buttongame1"
+          onclick="scissors()"
+        >
+          Scissors
+        </button>
+
+        <button id="play-button" onclick="welcome()">Play</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

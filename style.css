@@ -1,0 +1,85 @@
+#site {
+  display: grid;
+  grid-template-areas:
+    "topbar topbar topbar"
+    "game game scoreboard"
+    "game game scoreboard"
+    "footer footer footer";
+  min-height: 99vh;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
+  text-align: center;
+}
+
+#score {
+  grid-area: scoreboard;
+}
+
+div {
+  border: 1px solid white;
+}
+
+.buttongame {
+  display: none;
+}
+
+#topbar {
+  grid-area: topbar;
+}
+
+#topbar h1 {
+  font-size: 35px;
+}
+
+#button {
+  grid-area: game;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+#game {
+  grid-area: game;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+}
+
+#gameturn {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#pcchoice {
+    font-size: 500%;
+}
+
+#x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    flex: 1;
+}
+
+#playerchoice {
+    font-size: 500%;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    height: 30px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
